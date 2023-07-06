@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+:root {
+    --cor1: #FDAA7E;
+    --cor2: #F95235;
+    --cor3: #FB7E5A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+
+/* faixa */
+.menu {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: var(--cor1);
+    box-shadow: 5px 7px 15px rgba(0, 0, 0,0.2);
+    overflow: hidden;
+}
+
+
+/* menu principal */
+.dropimg {
+    width: 189px; 
+    margin-right: 59px;
+}
+
+.menu ul, .menu li, .menu li a, .dropimg /* imagem do senai */{
+    height: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.menu li {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.menu li a { 
+    display: inline-block;
+    font-size: 22px;
+    padding: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover {
+    background-color: var(--cor2);
+}
+
+/* sub-menu */
+.dropmenu {
+    display: none;
+    position: fixed;
+    background-color: var(--cor1);
+    width: 155px; /* colocar para funcionar de acordo com o tamanho da li */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropmenu{              
+    display: block;
+}
+
+.dropmenu a {                            
+    display: block!important;
+    font-size: 24px!important;
+}
+
+.dropmenu a:hover{
+    background-color: var(--cor3);
+}
+
+
+#fundo img {
+    z-index: -1;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32vw;
+    object-fit: cover;
+}
+
+#fundo h1 {
+    z-index: 1;
+    position: absolute;
+    top: 26%;
+    left: 100px;
+    font-family: 'Roboto Slab';
+    font-size: 50px;
+}
+
+#fundo pre {
+    font-family: 'Roboto';
+    font-size: x-large;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+/* Linha separadora da imagem e texto */
+#separador {
+    background-color: #FDAA7E;
+    color: #FDAA7E;
+    position: relative;
+    top: -10px;
+}
+/* Textos  */
+#temas h2 {
+    position: relative;
+    top: 10px;
+    left: 3%;
+    font-size: 20px;
+    margin-bottom: 1.5%;
+}
+#temas ul { 
+    margin-left: 7%;
+    font-size: 20px;
+    padding: 1px;
+}
+
+#detalhes {
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 95%;
+
+}
+
+#detalhes h2 {
+    font-size: 20px;
+    margin-bottom: 1.5%;
+}
+
+#detalhes p {
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+#detalhes ul {
+    margin-top: 10px;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.subL {
+    margin-left: 2%;
+    padding: 1px;
+}
+
+#lista{
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 20px;
+}
+
+#listaAtividades {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listaAtividades h2 {
+    margin-left: 3%;    
+    font-size: 20px;
+}
+
+#listaAtividades ul {
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+    left: 4%;
+}
+
+#img_html{
+    width: 30%;
+    height: 12.5vw;
+    margin-right: 10%;
+}
+
+#subFooter {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 35px;
+    margin-top: 3%;
+}
+
+#subFooter a {
+    position: relative;
+    top: 10px;
+    padding-left: 21.5%;
+    text-decoration: none;
+    color: black;
+}
+
+#Footer {
+    background-color: red;
+    color: white;
+    height: 15pc;
+}
+
+#endereco {
+    padding: 4%;
+    width: 460px;
+    float: left;
+    font-size: 20px;
+}
+
+#contato {
+    float: right;
+    padding: 5%;
+    font-size: 20px;
+}
+
+#maisInfo {
+    position: relative;
+    top: 75%;
+    right: 9%;
+    font-size: 25px
+}
+
+#maisInfo a{
+    color: white;
+}
+
+#subFooter a:hover{
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .menu {
+      height: auto;
+      position: static;
+      box-shadow: none;
+    }
+    
+    .menu ul {
+      display: block;
+      text-align: center;
+    }
+    
+    .menu li {
+      display: block;
+      padding: 10px;
+    }
+    
+    .menu li a {
+      padding: 10px;
+    }
+    
+    .dropdown:hover {
+      background-color: transparent;
+    }
+    
+    .dropmenu {
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    
+    .dropmenu a {
+      display: block !important;
+    }
+    
+    #fundo img {
+      height: auto;
+    }
+    
+    #fundo h1 {
+      top: 10%;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    #fundo pre {
+      top: 30%;
+      left: 10px;
+      text-align: center;
+    }
+    
+    #temas h2,
+    #detalhes h2,
+    #lista {
+      margin-left: 0;
+      text-align: center;
+      font-size: 24px;
+    }
+    
+    #temas ul,
+    #detalhes ul,
+    #listaAtividades ul {
+      margin-left: 0;
+      padding-left: 0;
+      text-align: center;
+      font-size: 18px;
+    }
+    #endereco,
+    #contato,
+    #maisInfo {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+  }

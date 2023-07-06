@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+:root{
+    --cor1: #FDAA7E;
+    --cor2: #F95235;
+    --cor3: #FB7E5A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* faixa */
+.menu {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: var(--cor1);
+    box-shadow: 5px 7px 15px rgba(0, 0, 0,0.2);
+    overflow: hidden;
+}
+
+/* menu principal */
+.dropimg {
+    width: 189px; 
+    margin-right: 59px;
+}
+
+.menu ul, .menu li, .menu li a, .dropimg /* imagem do senai */{
+    height: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.menu li {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.menu li a { 
+    display: inline-block;
+    font-size: 22px;
+    padding: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover {
+    background-color: var(--cor2);
+}
+
+/* sub-menu */
+.dropmenu {
+    display: none;
+    position: fixed;
+    background-color: var(--cor1);
+    width: 155px; /* colocar para funcionar de acordo com o tamanho da li */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropmenu{              
+    display: block;
+}
+
+.dropmenu a {                            
+    display: block!important;
+    font-size: 24px!important;
+}
+
+.dropmenu a:hover{
+    background-color: var(--cor3);
+}
+
+.imag{
+    position: absolute;
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 32pc;
+    top: 25px;
+}
+
+#titulo{
+    position: absolute;
+    font-size: 50px;
+    top: 25%;
+}
+
+#definicao{
+    position: absolute;
+    font-size: 20px;
+    top: 430px;
+    left: 20px;
+}
+
+#linha{
+    background-color: #FDAA7E;
+    color: #FDAA7E;
+    position: absolute;
+    top: 550px;
+    width: 100%;
+}
+
+#lista{
+    position: absolute;
+    font-size: 15px;
+    top: 39pc;
+    padding-left: 150px;
+    font-size: 25px;
+}
+
+#luva{
+    position: absolute;
+    top: 620px;
+    left: 60%;
+}
+
+#uni p{
+    position: absolute;
+    top: 960px;
+    font-size: 25px;
+    text-align: justify;
+    max-width: 1000px;
+    left: 100px;
+}
+
+#uni h2{
+    left: 150px;
+    position: absolute;
+    top: 920px;
+    font-size: 30px;
+    text-align: justify;
+    max-width: 1200px;
+}
+
+#lista2{
+    position: absolute;
+    font-size: 15px;
+    top: 1300px;
+    padding-left: 150px;
+    font-size: 25px;
+}
+
+#proc{
+    position: absolute;
+    top: 80pc;
+    left: 50%;
+}
+
+#proc img{
+    width: 80%;
+}
+
+
+/* style do footer */ 
+
+#rodape{
+    position:absolute;
+    top: 1650px;
+    width: 100%;
+}
+
+#subFooter { 
+	background-color: #D9D9D9;
+	width: 100%; 
+	height: 55px; 
+	margin-top: 3%;
+    font-size: 20px;
+}
+ #subFooter a { 
+	position: relative; 
+	top: 10px; 
+	padding-left: 20.5%; 
+	text-decoration: none; 
+	color: black; 
+} 
+#Footer { 
+	background-color: red; 
+	color: white; 
+	height: 20pc; 
+} 
+
+#endereco { 
+	padding: 4%; 
+	width: 620px; 
+	float: left; 
+	font-size: 27px; 
+} 
+
+#contato { 
+	float: right; 
+	padding: 5%; 
+	font-size: 27px; 
+} 
+#maisInfo { 
+	position: relative; 
+	top: 75%; 
+	right: 0%; 
+	font-size: 30px 
+} 
+#maisInfo a{ 
+	color: white;
+}
+ #subFooter a:hover{ 
+color: red;
+}
